@@ -41,6 +41,12 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
+/*
+this happens due to inheritance. Instance of, you can INHERIT your parents traits, but
+your parents cannot inherit anything from you. In programming terms, the variable can
+go deeper into the function, but it cannot give it's traits to it's parent container.
+
+*/
 
 
 const external = "I'm outside the function";
