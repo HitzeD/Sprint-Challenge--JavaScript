@@ -43,3 +43,4 @@ class CubeMaker extends CuboidMaker{
 const medCube = new CubeMaker(4,4,4);
 
 console.log(medCube.cubeVolume());
+console.log(medCube.cubeSurfaceArea());
