@@ -76,13 +76,14 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-// const sorting = graduates.forEach(function(currentValue){
-//   universities.push(currentValue.university);
-// });
+const universities = graduates.sort((obj1,obj2) => (obj1.university > obj2.university) ? 1 : -1);
+
 for(let i = 0; i < graduates.length; i++){
-  // graduates.university.sort(a => a - b);
-  universities.push(graduates[i]);
+  let big = graduates[0];
+  if(graduates[i] > big){
+		console.log(graduates[i] + ' inside');
+    university.push(graduate[i]);
+  }
 }
 console.log(universities);
 
@@ -93,9 +94,12 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
-const contactSort = graduates.forEach(function(currentValue){
-  contactInfo.push(`${currentValue.first_name} ${currentValue.email}`);
-});
+// const contactSort = graduates.forEach(function(currentValue){
+//   contactInfo.push(`${currentValue.first_name} ${currentValue.email}`);
+// });
+for(let i = 0; i < graduates.length; i++){
+  contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`);
+}
 console.log(contactInfo);
 
 
